@@ -1,5 +1,6 @@
 echo -e "\e[36m>>>>>>>>> configuring NodeJS repos <<<<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+
 echo -e "\e[36m>>>>>>>>> install NodeJS <<<<<<<<<<\e[0m"
 yum install nodejs -y
 
@@ -11,7 +12,7 @@ rm -rf /app
 mkdir /app
 
 echo -e "\e[36m>>>>>>>>> Download App Content <<<<<<<<<<\e[0m"
-curl -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
+curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
 cd /app
 
 echo -e "\e[36m>>>>>>>>> Unzip App Content <<<<<<<<<<\e[0m"
