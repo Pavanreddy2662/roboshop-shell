@@ -1,6 +1,6 @@
 sorce common.sh
 
-dirname $0
+pwd
 exit
 
 echo -e "\e[36m>>>>>>>>> configuring NodeJS repos <<<<<<<<<<\e[0m"
