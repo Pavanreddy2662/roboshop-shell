@@ -1,5 +1,8 @@
 sorce common.sh
 
+dirname $0
+exit
+
 echo -e "\e[36m>>>>>>>>> configuring NodeJS repos <<<<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
