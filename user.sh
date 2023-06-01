@@ -1,5 +1,5 @@
 script_path=$(dirname $0)
-source ${script-path}/common.sh
+source ${script-path} /common.sh
 
 exit
 
