@@ -1,7 +1,7 @@
 source common.sh
 
 yum install python36 gcc python3-devel -y
-useradd ${app_user}
+useradd ${app_User}
 mkdir /app
 curl -L -o /tmp/payment.zip https://roboshop-artifacts.s3.amazonaws.com/payment.zip
 cd /app

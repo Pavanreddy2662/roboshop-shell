@@ -1,7 +1,7 @@
-### sorce common.sh
+source common.sh
 
-##dirname $0
-##exit
+dirname $0
+exit
 
 echo -e "\e[36m>>>>>>>>> configuring NodeJS repos <<<<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
@@ -10,8 +10,7 @@ echo -e "\e[36m>>>>>>>>> install NodeJS <<<<<<<<<<\e[0m"
 yum install nodejs -y
 
 echo -e "\e[36m>>>>>>>>> Add Application User <<<<<<<<<<\e[0m"
-useradd roboshop
-##${app_user}
+useradd ${app_User}
 
 echo -e "\e[36m>>>>>>>>> Create Application Directory <<<<<<<<<<\e[0m"
 rm -rf /app
