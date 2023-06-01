@@ -1,5 +1,7 @@
+# shellcheck disable=SC2034
 script_path=$(dirname $0)
-source ${script-path} /common.sh
+# shellcheck disable=SC2086
+source ${script-path}/common.sh
 
 exit
 
