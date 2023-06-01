@@ -7,7 +7,7 @@ echo -e "\e[36m>>>>>>>>> install NodeJS <<<<<<<<<<\e[0m"
 yum install nodejs -y
 
 echo -e "\e[36m>>>>>>>>> Add Application User <<<<<<<<<<\e[0m"
-useradd ${app_User}
+useradd ${app_user}
 
 echo -e "\e[36m>>>>>>>>> Create Application Directory <<<<<<<<<<\e[0m"
 rm -rf /app
