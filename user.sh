@@ -1,6 +1,6 @@
 ### sorce common.sh
 
-pwd
+dirname $0
 exit
 
 echo -e "\e[36m>>>>>>>>> configuring NodeJS repos <<<<<<<<<<\e[0m"
@@ -34,7 +34,7 @@ cp /home/centos/roboshop-shell/user.service /etc/systemd/system/user.service
 echo -e "\e[36m>>>>>>>>> Start user Service <<<<<<<<<<\e[0m"
 systemctl daemon-reload
 systemctl enable user
-systemctl start user
+systemctl rstart user
 
 echo -e "\e[36m>>>>>>>>> Copy MongoDB Repo <<<<<<<<<<\e[0m"
 cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
